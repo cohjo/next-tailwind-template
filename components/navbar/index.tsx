@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <NavigationMenu.Root className="h-fit w-full border-gray-200 border-b-[1px]">
-      <NavigationMenu.List className="flex flex-row space-x-4 uppercase py-2 px-2">
+      <NavigationMenu.List className="flex flex-row space-x-4 uppercase py-4 px-2">
         <NavigationMenu.Item onClick={() => setActive('/')}>
           <CustomLink active={isActive('/')} href="/">
             Home
