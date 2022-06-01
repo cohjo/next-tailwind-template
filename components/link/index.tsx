@@ -6,12 +6,16 @@ import Link from 'next/link'
 
 const CustomLink: React.FC<NavigationMenuLinkProps> = ({
   children,
+  active,
   href,
   ...props
 }) => {
   return href ? (
     <Link href={href}>
-      <NavigationMenuLink className="cursor-pointer" {...props}>
+      <NavigationMenuLink
+        className={active ? 'text-sky-600 font-semibold' : 'font-semibold'}
+        {...props}
+      >
         {children}
       </NavigationMenuLink>
     </Link>
