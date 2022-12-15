@@ -1,14 +1,9 @@
-import Link from 'next/link'
+import Navbar from './components/client/Navbar'
 
 export default function Home() {
   return (
     <div>
-      <nav>
-        <Link href="/about">about</Link>
-        <Link href="/contact">contact</Link>
-      </nav>
-      <main>hello</main>
-
+      <main className="">hello test</main>
       <footer></footer>
     </div>
   )
