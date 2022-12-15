@@ -1,4 +1,4 @@
-// import './output.css' // use with turbopack
+// import '../output.css' // needed when using turbopack
 import Navbar from './components/client/Navbar'
 import './globals.css'
 
