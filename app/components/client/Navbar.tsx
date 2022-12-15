@@ -7,12 +7,12 @@ export default function Navbar() {
   const pathname = usePathname()
   console.log(pathname)
   return (
-    <nav className="sticky left-0 grid h-auto grid-cols-2 gap-2 w-fit">
+    <nav className="sticky grid h-auto grid-cols-2 gap-2 w-fit">
       <Link
         className={
-          'col-span-1' + pathname === '/about'
-            ? 'font-semibold'
-            : 'transition-all ease-in-out hover:text-blue-600 hover:font-semibold'
+          pathname === '/about'
+            ? 'font-semibold col-span-1'
+            : 'transition-all ease-in-out hover:text-blue-600 hover:font-semibold col-span-1'
         }
         href="/about"
       >
@@ -20,9 +20,9 @@ export default function Navbar() {
       </Link>
       <Link
         className={
-          'col-span-1' + pathname === '/contact'
-            ? 'font-semibold'
-            : 'transition-all ease-in-out hover:text-blue-600 hover:font-semibold'
+          pathname === '/contact'
+            ? 'font-semibold col-span-1'
+            : 'transition-all ease-in-out hover:text-blue-600 hover:font-semibold col-span-1'
         }
         href="/contact"
       >
