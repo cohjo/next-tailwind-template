@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "dev-turbo": "concurrently \"next dev --turbo\" \"tailwindcss --input ./app/globals.css --output ./app/output.css --watch\"",
+    "dev-turbo": "concurrently \"next dev --turbo\" \"tailwindcss --input ./app/globals.css --output ./output.css --watch\"",
     "build": "next build",
-    "build-turbo": "tailwindcss ./app/globals.css --output ./app/output.css && next build",
+    "build-turbo": "tailwindcss ./app/globals.css --output ./output.css && next build",
     "start": "next start",
     "lint": "next lint"
   },
