@@ -25,7 +25,7 @@ pnpm run build && pnpm run start
 ```
 
 If you'd like to use [Turbopack](https://turbo.build/pack), get started by following here:
-1. uncomment the import of `output.css` in `/app/layout.tsx, and comment out the import of `globals.css`
+1. uncomment the import of `output.css` in `/app/layout.tsx`, and comment out the import of `globals.css`
 2. run with either of the following:
 
 ```bash
